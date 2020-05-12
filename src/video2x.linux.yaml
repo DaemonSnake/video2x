@@ -99,7 +99,7 @@ anime4kcpp:
   deviceID: 0 # Specify the device ID (unsigned int [=0])
   codec: mp4v # Specify the codec for encoding from mp4v(recommended in Windows), dxva(for Windows), avc1(H264, recommended in Linux), vp09(very slow), hevc(not support in Windowds), av01(not support in Windowds) (string [=mp4v])
 ffmpeg:
-  ffmpeg_path: null
+  ffmpeg_path: '/usr/bin'
   intermediate_file_name: 'intermediate.mkv'
   # step 1: extract all frames from original input
   # into temporary directory
@@ -139,7 +139,7 @@ ffmpeg:
     '-hwaccel': auto
     '-y': true
 gifski:
-  gifski_path: null
+  gifski_path: '/usr/bin'
   # output: null # Destination file to write to
   # fps: 20 # Animation frames per second (for PNG frames only) [default: 20]
   fast: false # 3 times faster encoding, but 10% lower quality and bigger file
